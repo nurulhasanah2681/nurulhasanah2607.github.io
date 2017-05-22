@@ -82,24 +82,113 @@
         </div>
        
         <div style="height:60%; width:100%;">
-              
-            <ul>
-                    <li><a href="AboutProduct.html">About Product</a></li>
-                    <li><a href="ContactUs.html">Contact Us</a></li>
-                    <li><a href="ShippingandDelivery.html">Shipping and Delivery</a></li> 
-            </ul>
+            <style>
+                body {font-family: "Lato", sans-serif;}
+
+                    /* Style the tab */
+                    div.tab {
+                        overflow: hidden;
+                        border: 1px solid #ccc;
+                        background-color: #f1f1f1;
+                    }
+
+                    /* Style the buttons inside the tab */
+                    div.tab button {
+                        background-color: inherit;
+                        float: left;
+                        border:none;
+                        outline: none;
+                        cursor: pointer;
+                        padding: 14px 16px;
+                        transition: 0.3s;
+                        font-size: 17px;
+                    }
+
+                    /* Change background color of buttons on hover */
+                    div.tab button:hover {
+                        background-color:darkgrey;
+                    }
+
+                    /* Create an active/current tablink class */
+                    div.tab button.active {
+                        background-color:inherit;
+                    }
+
+                    /* Style the tab content */
+                    .tabcontent {
+                        display: none;
+                        padding: 6px 7px;
+                        border: 1px solid #ccc;
+                        border-top: none;
+                    }
+                 </style>
+
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'London')">About Product</button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')">Shipping And Delivery</button>
+              <button class="tablinks" onclick="openCity(event, 'Tokyo')">Contact Us</button>
+            </div>
+
+                <div id="London" class="tabcontent">
+                  <h3>About Product</h3>
+                    <p> Zardozi or Zardosi. It is being done by handful of Artisans in the world and is on the verge of extinction. Considering the detailed work done by Artisan using Semi-precious Stones, Silk Glass beads, Golden polished copper wires and beads, it will certainly be individual's pride to own it. <p>Usage :It's Jewel Carpet and have to be used as Wall Hanging (With or without frame) or decorating table and other flat surfaces. Can not be used as Area Rug or Ground Carpet.</p>
+                    <p>Material Used : Original Semi-precious Stones, Silk, Gold polished Copper Wire, Silver Polished Copper wire.</p> <p>Zardozi embroidery is beautiful metal embroidery, which once used to embellish the attire of the Kings and the royals in India. It was also used to adorn walls of the royal tents, scabbards, wall hangings and the paraphernalia of regal elephants and horses. Zardozi embroidery work involves making elaborate designs, using gold and silver threads. Further adding to the magnificence of the work are the studded pearls and precious stones. Zardosi embroidery has been in existence in India from the time of the Rig Veda. There are numerous instances mentioning the use of zardozi embroidery as ornamentation on the attire of gods. Initially, the embroidery was done with pure silver wires and real gold leaves. However, today, craftsmen make use of a combination of copper wire, with a golden or silver polish, and a silk thread. This is because there is hardly any availability of gold/silver on such a large scale as before.</p>
+
+                    <p>  Absolutely Exquisite 100% Handmade Kashmir Zardozi Royal Jewel Carpet / Rug / Wall Hanging with SEMI-PRECIOUS stones and amazingly intricate Zardozi Hand Embroidery in Gold and antique Copper metallic threads, from Kashmir India, comes in all standard sizes.</p>
+
+                    <p>A Royal stunning shimmering 100% handcrafted work of timeless art from the artisans of Kashmir. Zardozi embroidery with dozens of semi-precious stones set into the embroidery!
+
+                    This spectacular piece of workmanship & skill is an amazing collage of fine Zardozi embroidery accented with semi-precious stones such as Onyx, Corals and Lapis.The sparkling Zardozi embellishments in gold & copper work will lend a spectacularly ethnic look and add style to your room. Transform your table, floor or wall with the royal grandeur of Indian culture.This is a great gift for a loved one and a genuine Collector's item. Never seen in any major departmental store in the U.S, this is a rare find & a true treasure. Don't miss this great deal. Guaranteed you'll love it or your money back!
+                        </p>
+                </div>
+
+        <div id="Paris" class="tabcontent">
+          <h3>Shipping And Delivery</h3>
+
+                <p>Cost of the shipping will be on the customers and the fees is depend on the weight of the Goods.    </p>
+                <p>The shipping we are using is:</p>
+            
+                <p>Indian Force</p>
+                <p> Blue Dot</p>
+                <p> Fed Ex</p>
+                <p> DHL</p>
+    
+            </div>
+
+        <div id="Tokyo" class="tabcontent">
+          <h2><b>Contact Us :</b></h2>
+            <h3><u>NURUL:</u></h3>
+                <p>Mobile No/ WhatsApp: +6582201845
+
+                  <p>Email: nurulhasanah.2681@gmail.com</p> 
+                <h3><u>SYED ZAHOOR:</u></h3>  
+                <p>WhatsApp:+919650917511</p>
+                <p>Email:syed4u@live.in </p>
+                <h3><u>YASIR</u> </h3>
+                <p>WhatsApp: +919990204652</p>
+                <p>Email: Sharyal14@gmail.com</p>
+
         </div>
+
+            <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            </script>
+
         
-        <div id="div-footer" style="background-color:lightgrey; width:100%;height:15%; float:right;">
-           
-                
-            <ul> 
-           
-                 <a href="https://www.facebook.com/nurulhasanahrais/"><img src="Image/facebooklogo.png" width="30" height="30"> </a>
-                   <a href="https://www.instagram.com/nurul_hrais/"><img src="Image/instagramlogo1.jpg" width="30" height="30"> </a> 
-                <a href="https://www.twitter.com/nurulrais_yasir/"><img src="Image/twitterlogo.png" width="30" height="30">  </a> 
-            </ul>
-       
+        
+        
         </div>
     </body>
 </html>
